@@ -1,8 +1,10 @@
-FROM node:lts
+FROM node:latest
 
 RUN mkdir ./.npm
 
 RUN chown -R 1000650000:0 "/.npm"
+
+RUN npm install -g npm@9.6.6
 
 WORKDIR /app
 
