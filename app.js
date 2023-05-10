@@ -6,6 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
+    console.error("Malformed request")
     return res.status(400).json({ message: "Hello World" })
 })
 
