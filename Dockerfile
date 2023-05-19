@@ -1,8 +1,4 @@
-FROM node:latest
-
-RUN mkdir ./.npm
-
-RUN chown -R 1000650000:0 "/.npm"
+FROM node:alpine
 
 WORKDIR /app
 
