@@ -4,7 +4,7 @@ const axios = require("axios");
 async function main(params) {
     console.log(params)
     const authenticator = new IamAuthenticator({
-        apikey: "<your_api_key>",
+        apikey: params.apikey,
     });
 
     const options = {
